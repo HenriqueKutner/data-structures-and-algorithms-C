@@ -25,15 +25,15 @@ int main()
   b = 3;
   p1 = &a;
   p2 = p1;
-  // printf("*p1 O valor inteiro que p1 está apontando é = %d/n &a = %p/n", *p1, &a);
+  printf("*p1 O valor inteiro que p1 está apontando é = %d\n &a = %p\n", *p1, &a);
   printf("O valor de p1 é = %p\n, O endereço de memória de 'a' é = %p\n", p1, &a);
-  // print("O endereço de memória de p1 é")
-  // printf("*p1 = %d\n *p2 = %d\n", *p1, *p2);
-  // printf("a = %d\n b = %d\n", a, b);
-  // *p2 = *p1 + 3;
-  // printf("*p2 = %d\n", *p2);
-  // b = b * (*p1);
-  // (*p2)++;
+  printf("*p1 = %d\n *p2 = %d\n", *p1, *p2);
+  printf("a = %d\n b = %d\n", a, b);
+  *p2 = *p1 + 3;
+  printf("*p2 = %d\n", *p2);
+  b = b * (*p1);
+  (*p2)++;
+  printf("*p2 = %d\n", *p2);
 
   return 0;
 };

@@ -36,6 +36,7 @@ Esquema de memória
         tipo* v = (tipo*)malloc(n*sizeof(tipo));
                 optional 
         float*v = (float*)malloc(5*sizeof*(float));
+        Todas as vaiáveis sao alocadas na stack
         Digamos que esse `v` retornará o endereço de memória H200
         Esse H200 será armazenado em um endereço de momória na stack
         ex. S100[h200] e ele irá apontar para o endereco base de um bloco

@@ -15,6 +15,13 @@ Esquema de memória
 
 - Alocação dinâmica
 
+    Memória dinamica é utilizada quando nao se sabe ao certo
+    o quanto de memória será necessário para o armazenamento de 
+    elementos. 
+    Quando usamos por exemplo o scanf() que é uma funçao que le inputs, 
+    esse valor sera armazenado dinamicamente pois esta sendo lido em 
+    runtime
+
     O espaço é alocado dinamicamente durante a execuçao do programa.
     Pode ser criada ou eliminada durante a execucao do programa.
     Libraçao feita MANUALMENTE pelo programador.
@@ -33,25 +40,38 @@ Esquema de memória
                   demonstrar que isso aqui malloc(n*sizeof(tipo)) vai retornar
                   um endereço da base da posiçao, ou seja, vai retornar um
                   ponteiro
+
         tipo* v = (tipo*)malloc(n*sizeof(tipo));
                 optional 
         float*v = (float*)malloc(5*sizeof*(float));
+
         Todas as vaiáveis sao alocadas na stack
         Digamos que esse `v` retornará o endereço de memória H200
         Esse H200 será armazenado em um endereço de momória na stack
         ex. S100[h200] e ele irá apontar para o endereco base de um bloco
-        de memoria na heap
+        de memoria na heap.
 
         O ponteiro é alocado na stack
 
+        Quando declaramos um bloco de bytes, o malloc coloca `lixos` nos valores,
+        caso nao específicado.
+  
     - calloc
 
+        Aloca um bloco de bytes consecutivos na heap e devolve o endereço
+        desse bloco.
+        Ao contrário do malloc que aloca `lixos` nos valores, o calloc coloca
+        zero em cada 'caixinha'
+        O malloc pode até colocar zeros, mas não é garantido. O calloc garante.
 
-    Memória dinamica é utilizada quando nao se sabe ao certo
-    o quanto de memória será necessário para o armazenamento de 
-    elementos. 
-    Quando usamos por exemplo o scanf() que é uma funçao que le inputs, 
-    esse valor sera armazenado dinamicamente pois esta sendo lido em 
-    runtime
+        tipo* v = (tipo*)calloc(n, sizeof(tipo));
+
+        Eu só tenho acesso aos valores via ponteiros.
+
+        
+
+
+
+
 
 */

@@ -1,5 +1,5 @@
 /*
-O sistema operacional guarda o primeiro endereco, no caso,
+O sistema operacional guarda o primeiro endereço, no caso,
 S104 e a partir do mesmo realiza os calculos.
 (v + 0) = &v[0] = S104
 Vamos pegar o endereco de memoria atual S104 e somar 

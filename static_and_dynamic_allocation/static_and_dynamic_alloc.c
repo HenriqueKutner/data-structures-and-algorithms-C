@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // Contém o
+#include <stdlib.h> // Contém o malloc e calloc
 
 int main () {
     // alocação de um vetor estático (stack)

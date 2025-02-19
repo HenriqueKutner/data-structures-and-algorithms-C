@@ -2,7 +2,7 @@
 /*
 Essa é uma função que recebe três valores. 
 x vai receber uma cópia do valor a
-y vai eceber uma cópia do valor b
+y vai receber uma cópia do valor b
 z vai receber o endereço de memória de c
 */
 void soma(int x, int y, int *z){

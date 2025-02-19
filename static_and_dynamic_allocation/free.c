@@ -13,10 +13,15 @@ void imprime(const int v[], int tam) {
     }
 }
 
+// v está presente na stack
 void desaloca_vetor(int **v){
-    // Desaloca na heap
+    printf("Endereço de v na stack = %p\n", &v);
+    printf("Endereço da heap que v está apontando = %p\n", *v);
+    printf("Conteúdo de v = %d\n", **v);
+    // Desaloca um bloco de memória na memória heap 
+    // começando non endereço base
     free(*v);
-    v = NULL;
+    *v = NULL;
 }
 
 int main() {
@@ -34,6 +39,8 @@ int main() {
     // imprime(vh, 5);
     puts("Antes de desalocar vetor dinamico");
     printf("&vh = %p, vh = %p\n", &vh, vh);
+    puts("Qual o valor que vh está apontando? Ele está apontando para um endereço de memória que contém um inteiro.");
+    printf("%d\n", *vh);
     /*
     O vh guarda um ponteiro de inteiro, para liberar essa caixinha
     eu preciso passar o endereço de memória dela. Como ela guarda o endereço 

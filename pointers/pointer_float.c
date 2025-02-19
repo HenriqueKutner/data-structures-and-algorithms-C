@@ -8,6 +8,7 @@ int main()
   fp = &z;
 
   printf("*&z = %f\n", *&z); // 2.5
+  // Qual o valor que ele está apontando?
   printf("*fp = %p\n", *fp); // 2.5
   // printf("**&fp = %f\n", **&fp);
   return 0;

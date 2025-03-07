@@ -43,14 +43,21 @@ int main() {
         {4, 5, 6}
     };
 
-    int *linha1 = (int*) calloc(3, sizeof(int));
-    int *linha2 = (int*) calloc(3, sizeof(int));
-    for(int i = 0; i < 3; i++){ 
-        linha1[i] = mheap[0][i];
-        printf("%d\n", linha1[i]);
-        
-    }
-    
+    // Tentaiva de alocar uma matriz dinamicamente 
 
+    // int *linha1 = (int*) calloc(3, sizeof(int));
+    // int *linha2 = (int*) calloc(3, sizeof(int));
+    // for(int i = 0; i < 3; i++){ 
+    //     linha1[i] = mheap[0][i];
+    //     printf("Endereço: %p, Valor: %d\n", &linha1[i], linha1[i]);  
+    // }
+    // for(int i = 0; i < 3; i++){ 
+    //     linha2[i] = mheap[1][i];
+    //     printf("Endereço: %p, Valor: %d\n", &linha2[i], linha2[i]);  
+    // }
+
+    // Alocando uma matriz dinamicamente 
+
+     
     return 0;
 }

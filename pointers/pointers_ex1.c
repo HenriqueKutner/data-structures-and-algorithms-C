@@ -13,7 +13,7 @@ Esses 4 bytes ocupam endereços consecutivos na memória, por exemplo, 5000, 500
 Se eu declarar int a = 4;, o valor 4 será armazenado como um número binário nos 4 bytes (32 bits).
 O valor binário de 4 é 00000000 00000000 00000000 00000100, que será distribuído nesses bytes consecutivos.
 O compilador associa a variável a ao endereço inicial, neste caso, 5000.
-Ele sabe que, como int ocupa 4 bytes, os valores correspondentes estão nos endereços 5000, 5001, 5002 e 5003.
+Ele sabe que, como int ocupa 4 bytes, os valores correspondentes estão nos endereços 5000, 5001, 5002 e 5003. (Aritmetica de ponteiros)
 */
 
 #include <stdio.h>

@@ -14,13 +14,20 @@ int main() {
     coluna que terá o valor dentro.
     */
 
+    /* 
+    md fica na stack como um endereço único apontando para o primeiro slice. 
+    */
     int ***md = (int***) calloc(N_SLICES, sizeof(int**));
-    printf("%p, %p, %d", &md, md, md[0][0][0]);
+    // &md = 0x7fff3655f660
+    // md = 0x55f8910c82a0
+    printf("%p, %p\n", &md, md);
+    /*
+    Para cada slice vou alocar duas linhas e para cada linha vou alocar 3 colunas
 
-    // for(int i = 0; i < N_ROWS; i++){
-    //     md = (int**) calloc(N_ROWS, sizeof(int*));
+    Primeiro: Alocar duas linhas na heap que apontarao para para as colunas
+    */
 
-    // }
+    // for(int k = 0;)
     
 
 }

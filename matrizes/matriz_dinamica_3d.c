@@ -23,11 +23,14 @@ int main() {
     printf("%p, %p\n", &md, md);
     /*
     Para cada slice vou alocar duas linhas e para cada linha vou alocar 3 colunas
-
+    
     Primeiro: Alocar duas linhas na heap que apontarao para para as colunas
     */
 
-    // for(int k = 0;)
-    
-
+    for(int i = 0; i < N_SLICES; i++) {
+        md[i] = (int**) calloc(N_ROWS, sizeof(int*));
+        for(int j = 0; j < N_ROWS; j++) {
+            md[i][j] = (int*) calloc(N_COLS, sizeof(int));
+        }
+    }
 }
